@@ -4,7 +4,9 @@ async function fetchData(){
 
     document.getElementById("date").innerHTML = record.data.update_date_time;
     document.getElementById("cases").innerHTML = record.data.local_new_cases;
-    document.getElementById("latestBy").innerHTML = record.data.local_new_deaths;
+    document.getElementById("latestBy").innerHTML = record.data.local_deaths;
     document.getElementById("geathNew").innerHTML = record.data.local_recovered;
 
 }
+
+fetchData();

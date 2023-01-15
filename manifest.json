@@ -1,11 +1,17 @@
 {
     "name": "Covid-19 status Sri Lanka",
-    "Version": "1.0.0",
+    "version": "1.0.0",
     "description": "Latest covid data of Sri Lanka",
     "manifest_version":2,
     "author": "Darondouche",
-    "action": {
-        "default_popup": "index.html",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["scripts.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "homeCovidExtension.html",
         "default_icon": "logo.png",
         "default_title": "Covid Dashboard"
     }
